@@ -520,9 +520,9 @@ const ExchangeData = () => {
                     <Image
                       src={`/flags/${rate.currency_label.split(" ")[0]}.svg`}
                       alt={rate.currency_label}
-                      width={20}
-                      height={20}
-                      className="rounded-full transition-transform duration-300  "
+                      width={30}
+                      height={30}
+                      className="rounded-full transition-transform duration-300 "
                     />
                     <div className="flex flex-col text-center">
                       <span className="font-medium text-[8px] md:text-[13px] transition-colors duration-300">
