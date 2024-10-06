@@ -11,7 +11,7 @@ interface Article {
   url: string;
 }
 
-const API_URL = 'https://newsapi.org/v2/top-headlines?';
+const API_URL = 'https://newsapi.org/v2/top-headlines?country=us';
 const API_KEY = '7fe00d94c3c046d1a64c2c24aadada6e';
 
 const ShowNews = () => {
@@ -21,7 +21,7 @@ const ShowNews = () => {
   useEffect(() => {
     async function fetchNews() {
       try {
-        const res = await axios.get(`${API_URL}country=us&apiKey=${API_KEY}`);
+        const res = await axios.get(`${API_URL}&apiKey=${API_KEY}`);
         const fetchedArticles = res.data.articles;
         if (fetchedArticles.length > 0) {
           setArticles(fetchedArticles);
