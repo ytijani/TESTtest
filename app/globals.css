@@ -7,6 +7,22 @@
   --foreground: #171717;
 }
 
+
+.zoom-in {
+  animation: zoomIn 0.5s forwards;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background:rgba(242, 244, 247, 1);

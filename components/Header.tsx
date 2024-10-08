@@ -37,12 +37,12 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white w-[98%] mx-auto  h-[8vh] md:h-[10dvh] flex items-center mt-2 rounded-[8px]">
+    <header className="bg-white w-[98%] mx-auto h-[8vh] md:h-[10dvh] flex items-center mt-2 rounded-[8px]">
       <div className="flex items-center justify-between w-[96%] mx-auto p-2 md:p-0">
         {/* Logo and Name */}
         <div className="flex items-center gap-1">
           <Image src="/logo.svg" alt="Logo" width={35} height={5} />
-          <p className="font-semibold text-[7px] md:text-[1rem]">Saffar Exchange</p>
+          <p className="font-semibold text-[12px] md:text-[1rem]">Saffar Exchange</p>
         </div>
 
         {/* Date, Time, and Weather */}

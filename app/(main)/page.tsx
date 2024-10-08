@@ -10,6 +10,7 @@ export default function Home() {
         <ShowNews />
         <ExchangeData />
       </div>
+
     </div>
   );
 }
