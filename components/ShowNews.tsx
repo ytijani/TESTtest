@@ -46,7 +46,7 @@ const ShowNews = () => {
   const currentArticle = articles[currentIndex];
 
   return (
-    <div className="relative w-full md:w-[40%] rounded-[8px] overflow-hidden order-2 md:order-1 h-[40%] md:h-full">
+    <div className="relative md:w-[30%]  w-full rounded-[8px] overflow-hidden order-2 md:order-1 h-full">
       {currentArticle?.urlToImage && (
         <Image
           src={currentArticle.urlToImage}
