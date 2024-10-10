@@ -33,7 +33,7 @@
 body {
   background-color: var(--background);
   color: #171717;
-  height: 100dvh;
+  height: 100%;
 }
 
 @layer utilities {

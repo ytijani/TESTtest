@@ -37,12 +37,12 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white w-[98%] mx-auto h-[8vh] md:h-[10dvh] flex items-center mt-2 rounded-[8px]">
-      <div className="flex items-center justify-between w-[96%] mx-auto p-2 md:p-0">
+    <header className="bg-white w-[98%] mx-auto  flex items-center mt-2 rounded-[8px]">
+      <div className="flex items-center justify-between h-[83px] w-[96%] mx-auto p-2 md:p-0">
         {/* Logo and Name */}
         <div className="flex items-center gap-1">
           <Image src="/logo.svg" alt="Logo" width={35} height={5} />
-          <p className="font-semibold text-[12px] md:text-[1rem]">Saffar Exchange</p>
+          <p className="font-bold text-[15px] md:text-[1rem]">Saffar Exchange</p>
         </div>
 
         {/* Date, Time, and Weather */}
@@ -50,20 +50,20 @@ const Header = () => {
           {/* Date */}
           <div className="flex items-center gap-[5px]">
             <AiOutlineCalendar className="text-blue-600" size={20} />
-            <p className="font-medium text-[9px] md:text-[15px]">{date}</p>
+            <p className="font-semibold text-[15px] md:text-[15px]">{date}</p>
           </div>
 
           {/* Time */}
           <div className="flex items-center gap-[5px]">
             <AiOutlineClockCircle className="text-blue-600" size={20} />
-            <p className="font-medium text-[9px] md:text-[15px]">{time}</p>
+            <p className="font-semibold text-[15px] md:text-[15px]">{time}</p>
           </div>
 
           {/* Temperature and Location */}
           {weather ? (
             <div className="flex items-center gap-[5px]">
               {getWeatherIcon(weather.condition, weather.temperature)} 
-              <p className="font-medium text-[9px] md:text-[15px]">
+              <p className="font-semibold text-[15px] md:text-[15px]">
                 {weather.temperature}°C{" "}
                 <span className="font-extralight text-[13px] md:text-[15px]">|</span> {weather.city}
               </p>
