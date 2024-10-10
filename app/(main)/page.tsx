@@ -1,6 +1,4 @@
-import ExchangeData from '@/components/ExchangeData';
 import Header from '@/components/Header';
-import ShowNews from '@/components/ShowNews';
 
 export default function Home() {
   return (
